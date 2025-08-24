@@ -6,6 +6,7 @@ int main() {
     // Torre -> for
     // Bispo -> while
     // Rainha -> do-while
+    // Cavalo -> for + while (aninhados)
     // ============================
 
     // Variáveis para definir quantas casas mover cada peça
@@ -44,6 +45,28 @@ int main() {
         j++;
     } while (j <= movimentoRainha);
 
+    // ============================
+    // Movimento do Cavalo
+    // ============================
+    printf("\n=== Movimento do Cavalo ===\n");
+    // Cavalo vai se mover em "L":
+    // Duas casas para baixo e uma para a esquerda.
+    int casasBaixo = 2;
+    int casasEsquerda = 1;
+
+    // Loop for para controlar as duas casas para baixo
+    for (int k = 1; k <= casasBaixo; k++) {
+        printf("Baixo\n");
+    }
+
+    // Loop while aninhado para controlar a casa à esquerda
+    int l = 1;
+    while (l <= casasEsquerda) {
+        printf("Esquerda\n");
+        l++;
+    }
+
     return 0;
 }
+
 
